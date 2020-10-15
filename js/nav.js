@@ -1,26 +1,17 @@
-(function () {
-  var toggle = document.getElementById("header-nav-toggle"),
-    nav = document.getElementById("header-nav");
-  /* links = "header-nav".find("a"); */
+$(document).ready(function () {
+  $("body").addClass("js");
+  var $menu = $("#menu"),
+    $menulink = $(".menu-link");
+  $links = $("#menu").find("a");
 
-  // If JavaScript Is Enabled
-  // Modify Initial States
-  toggle.className = "is-visible";
-  nav.className = "is-hidden";
-
-  // Change Visibility On Click
-  toggle.addEventListener("click", function () {
-    if (nav.className === "is-hidden") {
-      nav.className = "";
-    } else {
-      nav.className = "is-hidden";
-    }
+  $menulink.click(function () {
+    $menulink.toggleClass("active");
+    $menu.toggleClass("active");
+    return false;
   });
-  /* links.addEventListener("click", function () {
-    if (nav.className === "is-hidden") {
-      nav.className = "";
-    } else {
-      nav.className = "is-hidden";
-    }
-  }); */
-})();
+  $links.click(function () {
+    $menulink.toggleClass("active");
+    $menu.toggleClass("active");
+  });
+});
+

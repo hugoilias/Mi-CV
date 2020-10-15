@@ -2,39 +2,81 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CV Hugo</title>
-  <meta name="description" content="Bienvenidos a mi CV">
-  <link rel="shortcut icon" href="./imagenes/icon_cv.svg" type="image/png">
-  <link rel="stylesheet" href="css/resposiv.css">
-  <link rel="stylesheet" href="./css/nav.css">
-  <link rel="stylesheet" href="css/style.css">
-
+  <meta name="description" content="Bienvenidos a mi CV" />
+  <link rel="shortcut icon" href="./imagenes/icon_cv.svg" type="image/png" />
+  <link rel="stylesheet" href="/fontawesome-free-5.15.0-web/css/all.min.css" />
+  <!-- <link rel="stylesheet" href="css/resposiv.css" /> -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="/css/nav.css" />
 </head>
 
 <body>
-  <header id="header">
-    <div id="header-content">
-      <div id="header-logo">
-        <h1 class="logo">LOGO</h1>
+  <header class="header">
+    <div class="container" id="pattern">
+      <div class="item" id="header-logo">
+        <div class="logo">
+          <img src="/imagenes/logo3.png" alt="" />
+        </div>
       </div>
-      <nav id="header-nav" class="is-hidden" role="navigation">
-        <ul class="nav">
+      <!--Begin Pattern HTML-->
+      <a href="#menu" class="menu-link">
+        <i class="fas fa-bars f2 bar"></i>
+      </a>
+      <nav class="item" id="menu" role="navigation">
+        <ul class="">
           <li><a href="#">Inicio</a></li>
-          <li><a href="#">Acerca de mi</a></li>
-          <li><a href="#">Prácticas</a></li>
-          <li><a href="#">Paginas Web</a></li>
+          <li><a href="#">Sobre mí</a></li>
+          <li><a href="#">Tecnologías</a></li>
+          <li><a href="#">Contacto</a></li>
         </ul>
       </nav>
-      <div id="header-nav-toggle" class="is-visible">
-        <i class="fa fa-bars">Menu</i>
-
-      </div>
     </div>
+    <!--End Pattern HTML-->
   </header>
-  <script src="/js/nav.js"></script>
 
+  <section class="container-s">
+    <div class="">
+      <h2>
+        Hola, mi nombre es <i>Hugo López</i> y soy Desarrollador Web, estoy orientado al Forntend.
+      </h2>
+    </div>
+  </section>
+
+  <section class="sec-container">
+    <img src="/imagenes/resds.jpg" alt="" />
+  </section>
+
+  <section>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non excepturi
+      quo ex sapiente est totam ullam, quidem, vero necessitatibus veritatis
+      error in nesciunt quisquam laudantium similique voluptatem. Voluptatibus
+      veniam impedit incidunt modi, unde, error, corrupti esse fugiat
+      voluptatum similique sed quo aliquam cumque numquam autem dolor quae
+      inventore sapiente laudantium.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non excepturi
+      quo ex sapiente est totam ullam, quidem, vero necessitatibus veritatis
+      error in nesciunt quisquam laudantium similique voluptatem. Voluptatibus
+      veniam impedit incidunt modi, unde, error, corrupti esse fugiat
+      voluptatum similique sed quo aliquam cumque numquam autem dolor quae
+      inventore sapiente laudantium.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non excepturi
+      quo ex sapiente est totam ullam, quidem, vero necessitatibus veritatis
+      error in nesciunt quisquam laudantium similique voluptatem. Voluptatibus
+      veniam impedit incidunt modi, unde, error, corrupti esse fugiat
+      voluptatum similique sed quo aliquam cumque numquam autem dolor quae
+      inventore sapiente laudantium.
+    </p>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+  <script src="/js/nav.js"></script>
 </body>
 
 </html>
