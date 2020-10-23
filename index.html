@@ -1,82 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Hugo</title>
+    <meta name="description" content="Bienvenidos a mi CV" />
+    <link rel="shortcut icon" href="./imagenes/icon_cv.svg" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="/fontawesome-free-5.15.0-web/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" href="css/resposiv.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/nav.css" />
+    <link rel="stylesheet" href="/css/animate.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CV Hugo</title>
-  <meta name="description" content="Bienvenidos a mi CV" />
-  <link rel="shortcut icon" href="./imagenes/icon_cv.svg" type="image/png" />
-  <link rel="stylesheet" href="/fontawesome-free-5.15.0-web/css/all.min.css" />
-  <!-- <link rel="stylesheet" href="css/resposiv.css" /> -->
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="/css/nav.css" />
-</head>
-
-<body>
-  <header class="header">
-    <div class="container" id="pattern">
-      <div class="item" id="header-logo">
-        <div class="logo">
-          <img src="/imagenes/logo3.png" alt="" />
+  <body>
+    <header class="header">
+      <div class="container" id="pattern">
+        <div class="item" id="header-logo">
+          <div class="logo animate__animated animate__zoomIn">
+            <img src="/imagenes/logo4.png" alt="" />
+          </div>
         </div>
+        <!--Begin Pattern HTML-->
+        <a href="#menu" class="menu-link">
+          <i class="fas fa-bars f2 bar"></i>
+        </a>
+        <nav class="item" id="menu" role="navigation">
+          <ul class="">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#smi">Sobre mí</a></li>
+            <li>
+              <a href="#tec">Tecnologías</a>
+            </li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
       </div>
-      <!--Begin Pattern HTML-->
-      <a href="#menu" class="menu-link">
-        <i class="fas fa-bars f2 bar"></i>
-      </a>
-      <nav class="item" id="menu" role="navigation">
-        <ul class="">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Sobre mí</a></li>
-          <li><a href="#">Tecnologías</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-    <!--End Pattern HTML-->
-  </header>
+      <!--End Pattern HTML-->
+    </header>
 
-  <section class="container-s">
-    <div class="">
-      <h2>
-        Hola, mi nombre es <i>Hugo López</i> y soy Desarrollador Web, estoy orientado al Forntend.
-      </h2>
-    </div>
-  </section>
+    <section class="container-s">
+      <div class="item-start">
+        <h2 class="animate__animated animate__zoomIn">
+          Hola, mi nombre es <i>Hugo López</i> y soy Desarrollador <i>Web</i>,
+          estoy orientado al Forntend. <br />
+          <p><img src="/imagenes/yo.png" alt="" /></p>
+          <a
+            class="animate__animated animate__flash animate__slower animate__infinite"
+            href="/CV/Hugo López Ramirez CV.pdf"
+            >PDF-CV</a
+          >
+        </h2>
+      </div>
+    </section>
 
-  <section class="sec-container">
-    <img src="/imagenes/resds.jpg" alt="" />
-  </section>
+    <section class="sec-container">
+      <img src="/imagenes/resds.jpg" alt="" />
+    </section>
 
-  <section>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non excepturi
-      quo ex sapiente est totam ullam, quidem, vero necessitatibus veritatis
-      error in nesciunt quisquam laudantium similique voluptatem. Voluptatibus
-      veniam impedit incidunt modi, unde, error, corrupti esse fugiat
-      voluptatum similique sed quo aliquam cumque numquam autem dolor quae
-      inventore sapiente laudantium.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non excepturi
-      quo ex sapiente est totam ullam, quidem, vero necessitatibus veritatis
-      error in nesciunt quisquam laudantium similique voluptatem. Voluptatibus
-      veniam impedit incidunt modi, unde, error, corrupti esse fugiat
-      voluptatum similique sed quo aliquam cumque numquam autem dolor quae
-      inventore sapiente laudantium.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non excepturi
-      quo ex sapiente est totam ullam, quidem, vero necessitatibus veritatis
-      error in nesciunt quisquam laudantium similique voluptatem. Voluptatibus
-      veniam impedit incidunt modi, unde, error, corrupti esse fugiat
-      voluptatum similique sed quo aliquam cumque numquam autem dolor quae
-      inventore sapiente laudantium.
-    </p>
-  </section>
-  <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
-  <script src="/js/nav.js"></script>
-</body>
-
+    <section class="container-me">
+      <div class="item-me">
+        <h3 class="text-1" id="smi">Sobre mí</h3>
+        <p>
+          Estoy cursando la Licenciatura de Informática en la UNAM, el 6to
+          semestre de acuerdo a mis posibilidades y disponibilidad de trabajo,
+          familia y otras actividades.
+        </p>
+        <p>
+          Me considero una persona honesta, responsable, trabajadora y
+          autodidacta, día a día voy aprendiendo más de este mundo de la
+          progrmación.
+        </p>
+        <p>
+          Por el momento mi vasta experiencia la he tomado en prácticas y
+          proyecto personal en un Bootcam de TECH 101.
+        </p>
+        <p>
+          Disfruto el comienzo de está profesión de Desarrollador <i>Web</i> y
+          tener éxito y aprender de mis errores como un reto a superar.
+        </p>
+      </div>
+    </section>
+    <section class="container-tec">
+      <h3 id="tec">Tecnologías</h3>
+      <article class="cont-tec">
+        <figure class="item- mostar">
+          <img src="/imagenes/html-5.svg" alt="" />
+        </figure>
+        <figure class="item- mostar">
+          <img src="/imagenes/css-5.svg" alt="" />
+        </figure>
+        <figure class="item- mostar">
+          <img src="/imagenes/javascript-4.svg" alt="" />
+        </figure>
+        <figure class="item- mostar">
+          <img src="/imagenes/sass-1.svg" alt="" />
+        </figure>
+        <figure class="item- mostar">
+          <img src="/imagenes/tailwindcss.svg" alt="" />
+        </figure>
+        <figure class="item- mostar">
+          <img src="/imagenes/git-icon.svg" alt="" />
+        </figure>
+        <figure class="item- mostar">
+          <img src="/imagenes/github-icon-1.svg" alt="" />
+        </figure>
+      </article>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="/js/nav.js"></script>
+  </body>
 </html>

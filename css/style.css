@@ -28,8 +28,11 @@ body {
   overflow-x: hidden;
 }
 
+/* Header y logo */
+
 .header {
-  background-color: rgba(223, 223, 236, 0.5);
+  background-color: rgba(205, 205, 216, 0.5);
+  z-index: 1; /* posicionamiento de cualquier efecto para estar encima de los hijos*/
 }
 
 .item {
@@ -45,23 +48,37 @@ body {
   padding-top: 1em;
 }
 
-.sec-container img {
-  width: 100%;
-  opacity: 0.85;
-}
-
 .logo img {
-  transition: 0.3s ease-in-out 0.1s;
+  transition: 0.3s linear 0.2s;
 }
 
 .logo img:hover {
   transform: scale(1.2);
 }
 
+/* Inicio con foto y pequeño banner con efecto s en letra */
+
+.container-s {
+  justify-content: center;
+}
+
+.container-s p {
+  margin: 10px auto;
+}
+
+.item-start img {
+  border-radius: 150px;
+  transition: 0.4s linear;
+}
+
+.item-start img:hover {
+  transform: scale(0.8);
+}
+
 h2 {
-  font: normal 1rem Verdana, Geneva, sans-serif; /*edita lista de fuentes*/
+  font: normal 1.5rem Verdana, Geneva, sans-serif; /*edita lista de fuentes*/
   background: -webkit-linear-gradient(top, #141212, #8e9b9e);
-  width: 80%;
+  width: 90%;
   border-radius: 10px;
   margin: 15px auto;
   text-align: center;
@@ -71,13 +88,103 @@ h2 {
   text-shadow: #cec5c5 2px 2px 3px;
 }
 
-li {
-  list-style: none;
+.item-start a {
+  text-decoration: none;
+  transition: 0.3s ease;
+  color: #fff;
 }
 
-li a {
-  text-decoration: none;
-  color: #333;
-  font-style: italic;
-  font-weight: 700;
+.item-start a:hover {
+  box-shadow: inset 0 -2px 0 #fff;
+}
+
+/* Imagen de inicio */
+
+.sec-container {
+  padding: 1rem;
+}
+
+.sec-container img {
+  margin: 1rem auto;
+  width: 100%;
+  border: 2px solid #333;
+  border-radius: 8px;
+  transition: 0.5s ease;
+}
+
+.sec-container img:hover {
+  transform: scale(0.9);
+}
+
+/* Sección sobre mí */
+
+.container-me {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #333;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  justify-content: center;
+}
+
+.item-me {
+  color: #fff;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.item-me h3 {
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+  font-size: 2rem;
+}
+
+.item-me p {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  font-size: 1.2rem;
+}
+
+/* Seccion de tecnologías */
+.container-tec {
+  text-align: center;
+}
+
+.container-tec h3 {
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.cont-tec {
+  display: block;
+  margin: auto;
+  width: 100%;
+  font-size: 0;
+  opacity: 0;
+}
+
+.cont-tec figure {
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+  padding: 2rem;
+}
+
+.cont-tec img {
+  max-width: 50%;
+}
+
+.mostrar {
+  animation: mostrar 1s;
+}
+
+@keyframes mostrar {
+  0% {
+    transform: translateY(60px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
